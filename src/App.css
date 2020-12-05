@@ -1,0 +1,133 @@
+:root {
+    --start-color: #fff;
+    --end-color: #fff;
+}
+
+body {
+    background: #fafafa;
+}
+
+.wrap {
+    display: block;
+    margin: 10px 25px;
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0px;
+    padding: 20px 0;
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-bar h2 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    color: #111;
+    margin: 10px 3px;
+    padding: 10px 0;
+    box-shadow: 0 0 4px 0 #ddd;
+    border-radius: 4px;
+    background: linear-gradient(toright bottom, var(--start-color), var(--end-color))
+}
+
+ul li .subject {}
+
+ul li .check-icon-container {
+    margin: 0 10px;
+}
+
+ul li .check-icon {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+ul li .delete-btn {
+    display: block;
+    font-size: 20pt;
+    margin: 0  10px 0 auto;
+}
+
+ul li .modified-date {
+    display: block;
+    margin: 5px 0 0 43px;
+    color: #ccc;
+    font-size: 11pt;
+}
+
+/* .no-item-data {
+    margin-top: 20px;
+    height: 250px;
+    background: url("https://image.freepik.com/free-vector/no-data-concept-illustration_114360-626.jpg");
+    background-size: cover;
+} */
+
+.add-item-box {
+    width: 100%;
+}
+
+.add-item-box td:nth-child(1) {
+    width: 70%;
+    text-align: center;
+}
+
+.add-item-box td:nth-child(2) {
+    width: 30%;
+    text-align: center;
+}
+
+.add-item-box td:nth-child(1) input[type=text], .add-item-box td:nth-child(2) button {
+    width: 90%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background: #ddd;
+}
+
+.add-item-box td:nth-child(2) button {
+    width: 100%;
+    padding: 2px 0;
+    font-size: 20pt;
+}
+
+._row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* large desktops, 1200px and up */
+@media screen and (min-width: 1200px) {
+    .wrap {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+/* desktops, 992px and up */
+@media screen and (min-width: 992px) {
+    .wrap {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+/* medium screen, 768px and up */
+@media screen and (min-width: 768px) {
+    .wrap {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+}
